@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="rps.css">
+  </head>
+  <body>
+
+    <div>
+      <div id="topSection">
+        <div id="greeting">
+          <p>~ Welcome to My Rock Paper Scissors Game ~</p>
+        </div>
+        <div id="instruction">
+          <p class="instucText"> This is a best of 5 game against the computer </p>
+          <p class="instucText"> Click on the an image to make your choice </p>
+        </div>
+      </div>
+      <div id="pChoiceButtons">
+        <ul>
+          <li><img src="rock.png" alt="" class="pcImg" id="RockIMG" onclick="play('ROCK')"> </li>
+          <li><img src="paper.jpg" alt="" class="pcImg" onclick="play('PAPER')"> </li>
+          <li><img src="scissors.png" alt="" class="pcImg" onclick="play('SCISSORS')"> </li>
+        </ul>
+      </div>
+      <div id="scoreBoard">
+        <div id="sbHeading">
+          <p id="sbHeadingText">Score</p>
+        </div>
+        <ul id="score">
+          <li id="pScore">Player: 0 </li>
+          <li id="cScore">Computer: 0  </li>
+          <li id="dScore">Draw: 0</li>
+        </ul>
+      </div>
+
+    </div>
+    <script src="GameScript.js"> </script>
+  </body>
+</html>
