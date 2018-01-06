@@ -1,0 +1,60 @@
+:root{
+  --colNum: 16;
+  --rowNum: 16;
+h1{
+  font-size: 1.4 em;
+  color: white;
+}
+h4{
+  color: white;
+}
+div{
+  display: block;
+}
+button{
+  font-size: 12px;
+  background-color: #0AC858;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+}
+input{
+  width: 10%;
+
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background: #0F0F0F;
+
+  font-family: Helvetica;
+}
+ul{
+  list-style-type: none;
+}
+ul li{
+  display: inline;
+}
+
+.sqrDiv{
+  border: solid 1px;
+  background: #202221;
+}
+
+
+#sketchBrd{
+  display: grid;
+  grid-template-columns: repeat(var(--colNum),auto) ;
+  grid-template-rows: repeat(var(--rowNum),auto) ;
+  grid-gap: 1px 1px;
+  border: solid 4px;
+  background: #ddf3f5;
+  width: 500px;
+  height: 500px;
+  padding: 2px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
