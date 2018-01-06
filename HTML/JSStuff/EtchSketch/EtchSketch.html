@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Etch Sketch</title>
+    <link rel="stylesheet" type="text/css" href="ES.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+  </head>
+  <body>
+
+    <div id="header">
+        <h1>Etch Sketch</h1>
+        <h4>Instructions: Mouse over board to start drawing. Change size(X*X) of the board by entering the value in the text field and pressing the new board buttonn </h4>
+    </div>
+
+    <div id="menu">
+      <ul>
+        <li> <button type="button" onclick="reset()" name="button">Reset</button></li>
+        <li> <button type="button" onclick="boardSize()" name="button">New Board</button></li>
+        <li> <input type="text" id="brdSize" name="" value=""> </li>
+      </ul>
+    </div>
+
+    <div id="sketchBrd">
+
+    </div>
+    <script src="ES.js" type="text/javascript">
+    </script>
+  </body>
+</html>
