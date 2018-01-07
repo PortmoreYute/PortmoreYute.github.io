@@ -1,0 +1,62 @@
+:root{
+  --colNum: 4;
+  --rowNum: 6;
+}
+body{
+  text-align: center;
+  font-family: fantasy;
+  background: #CBC4C4;
+}
+
+#container{
+  margin-left: 400px;
+  margin-right: 400px;
+  background: #C43C3C   ;
+  border: solid 5px;
+  height: 500px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+#input{
+  background: white;
+  font-size: 40px;
+  text-align: right;
+  border: solid 1px;
+  height: 50px;
+  border-radius: 15px;
+  padding: 4px;
+}
+
+#btnContainer{
+  margin: 10px;
+  display: grid;
+  grid-gap: 4px 4px;
+  grid-template-columns: repeat(var(--colNum),auto);
+  grid-template-rows: repeat(var(--rowNum),auto) ;
+}
+#zero{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#clearBtn{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+#bkSpace{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  height: 40px;
+}
+.calBtn{
+  background:#212121 ;
+  color: white;
+  border: solid 1px;
+  font-size: 20px;
+  font-family: fantasy;
+  height: 70px;
+}
+.calBtn:hover{
+  background:#35A563 ;
+  color: black;
+}
